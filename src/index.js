@@ -1,18 +1,17 @@
-import './style.css';
-function Gif (props){
-  return(
-    <div className="play-contai">
-      <img src={props.url} alt={props.alt} />
-      <div className="play-list">
-        <p>{props.nameAlbum}</p>
-        <p>{props.nameArtist}</p>
-      </div>
-      <div className="btn">
-        <button className="btn-select">
-          Select
-        </button>
-      </div>
-    </div>
-  );
-}
-export default Gif
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

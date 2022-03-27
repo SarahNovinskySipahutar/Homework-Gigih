@@ -1,5 +1,5 @@
 import './App.css'
-import Gif from '../src/components/index';
+import Gif from './components/index';
 import data from './data';
 
 function App() {
